@@ -1,9 +1,9 @@
-from IdentifierLexer import IdentifierFSM
-from IntegerLexer import IntegerFSM
-from RealLexer import RealLexer
-from Operator import OperatorChecker, operators
-from Keywords import KeywordChecker
-from Separator import SeparatorChecker, separators
+from LexerFSM.IdentifierLexer import IdentifierFSM
+from LexerFSM.IntegerLexer import IntegerFSM
+from LexerFSM.RealLexer import RealLexer
+from LexerFSM.Operator import OperatorChecker
+from LexerFSM.Keywords import KeywordChecker
+from LexerFSM.Separator import SeparatorChecker
 
 # this function helps determine if the operator has two characters in it because there are some with multiple
 def determineTwoCharOperator(content, char_pointer):

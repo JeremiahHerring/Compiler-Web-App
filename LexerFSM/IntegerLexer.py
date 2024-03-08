@@ -1,5 +1,5 @@
-from Separator import separators
-from Operator import operators
+from LexerFSM.Separator import separators
+from LexerFSM.Operator import operators
 class IntegerFSM:
     # Initialize IntegerFSM with all possible states and transition table
     def __init__(self):

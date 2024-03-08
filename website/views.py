@@ -1,7 +1,6 @@
 from flask import Blueprint, render_template, request
 from LexerFSM.main import lexer
 
-
 views = Blueprint('views', __name__)
 
 @views.route('/')
