@@ -10,12 +10,18 @@ def home():
 @views.route("/lexical-analyzer", methods=['GET', 'POST'])
 def lexical_analyer():
     if request.method == 'POST':
-        # Get the code from the textarea
-        code = request.form['textareaInput']
+        if 'textareaInput' in request.form:
+            code = request.form['textareaInput']
+            results = lexer(code)
+            return render_template("lexical-analyzer-results.html", results=results)
+        else:
+            return "Error: 'textareaInput' not found in form data", 400
 
-        results = lexer(code)
-        return render_template("lexical-analyzer-results.html", results=results)
     return render_template("lexical-analyzer.html")
+
+@views.route('lexical-analyzer-results', methods=['GET'])
+def lexical_analyzer_results():
+    return render_template('lexical-analyzer-results')
 
 @views.route("/syntax-analyzer")
 def syntax_analyer():
