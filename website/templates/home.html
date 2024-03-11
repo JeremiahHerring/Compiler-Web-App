@@ -2,5 +2,25 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<h1>This is the home page</h1>
+<div class="page-container">
+    <h1 class="page-title">Rat24S Compiler</h1>
+    <div class="card-container">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='syntax.png') }}" class="card-img-top" alt="code-img">
+            <div class="card-body">
+                <h5 class="card-title">Lexical Analyzer</h5>
+                <p class="card-text">Get tokens and lexemes of your pasted RAT24S Code</p>
+                <a href="/lexical-analyzer" class="btn btn-primary stretched-link">Lexical Analyzer</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{{ url_for('static', filename='code.png') }}" class="card-img-top" alt="code-img">
+            <div class="card-body">
+                <h5 class="card-title">Syntax Analyzer</h5>
+                <p class="card-text">Coming Soon...</p>
+                <a href="/lexical-analyzer" class="btn btn-primary stretched-link">Syntax Analyzer</a>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
