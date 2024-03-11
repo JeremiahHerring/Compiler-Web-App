@@ -21,7 +21,7 @@ $j(document).ready(function() {
         event.preventDefault();  // Prevent default form submission
 
         // Get the code from the textarea
-        var code = $j("#textareaInput").val();
+        let code = $j("#textareaInput").val();
 
         // Make an AJAX request to submit the code and get the results
         $j.ajax({
@@ -30,6 +30,8 @@ $j(document).ready(function() {
             data: { textareaInput: code },
             success: function(results) {
                 console.log(results);
+
+                $j("#resultsContainer").html(results)
 
                 // Redirect to the results page with the obtained results
                 window.location.href = "/lexical-analyzer-results";
