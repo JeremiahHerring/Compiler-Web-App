@@ -1,5 +1,3 @@
-Certainly! Below is a sample GitHub README for your RAT24S compiler web app:
-
 ---
 
 # RAT24S Compiler Web App
