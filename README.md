@@ -30,7 +30,7 @@ To use the web application, follow these steps:
 3. Navigate to the project directory:
 
     ```bash
-    cd rat24s-compiler-web-app
+    cd compiler-web-app
     ```
 
 4. Run the main.py file:
