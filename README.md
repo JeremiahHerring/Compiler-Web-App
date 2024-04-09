@@ -48,7 +48,7 @@ Feel free to contribute to the project! If you find any issues or have suggestio
 
 ## Related Projects
 
-Check out the [lexical-analyzer](https://github.com/jeremiahherring/rat24s-compiler) repository for the code without the website.
+Check out the [Rat24S-Compiler](https://github.com/jeremiahherring/rat24s-compiler) repository for the code without the website.
 
 ## License
 
