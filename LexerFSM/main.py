@@ -4,6 +4,7 @@ from LexerFSM.RealLexer import RealLexer
 from LexerFSM.Operator import OperatorChecker
 from LexerFSM.Keywords import KeywordChecker
 from LexerFSM.Separator import SeparatorChecker
+from LexerFSM.Production_Functions import syntax_analyzer
 
 # this function helps determine if the operator has two characters in it because there are some with multiple
 def determineTwoCharOperator(content, char_pointer):

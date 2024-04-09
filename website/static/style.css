@@ -13,3 +13,16 @@ body, html {
     align-items: center;
     height: 100vh;
 }
+
+#syntaxResultsContainer {
+    margin-top: 20px;
+}
+
+.syntaxResultsBox {
+    border: 2px solid #999; /* Increase border width and change color */
+    padding: 8px; /* Reduce padding */
+    border-radius: 8px; /* Round corners */
+    background-color: #f0f0f0; /* Lighter background color */
+    overflow: auto; /* Enable scrolling if the content overflows */
+    max-height: 600px; /* Limit the maximum height */
+}

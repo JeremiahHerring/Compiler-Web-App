@@ -2,7 +2,43 @@
 {% block title %}Syntax Analyzer{% endblock %}
 
 {% block content %}
+<h1>Syntax Analyzer</h1>
 
-<h1>Coming soon...</h1>
+<form id="syntaxForm" method="POST" action="/syntax-analyzer">
+    <div class="form-group">
+        <label for="textareaInput">Your Code:</label>
+        <textarea class="form-control" id="textareaInput" name="textareaInput" rows="20" placeholder="Paste Your Code Here"></textarea>
+    </div>
+    <button type="submit" class="btn btn-outline-dark" id="submitBtn">Submit</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+var $j = jQuery.noConflict();
+
+$j(document).ready(function() {
+    $j("#syntaxForm").submit(function(event) {
+        event.preventDefault();  // Prevent default form submission
+
+        // Get the code from the textarea
+        let code = $j("#textareaInput").val();
+
+        // Make an AJAX request to submit the code and get the results
+        $j.ajax({
+            type: "POST",
+            url: "/syntax-analyzer",
+            data: { textareaInput: code },
+            success: function(syntax_results) {
+                console.log(syntax_results);
+
+                $j("#syntaxResultsContainer").html(syntax_results)
+
+                // Redirect to the results page with the obtained results
+                window.location.href = "/syntax-analyzer-results";
+            }
+        });
+    });
+});
+</script>
 
 {% endblock %}
