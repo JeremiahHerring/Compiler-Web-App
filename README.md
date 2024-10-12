@@ -7,7 +7,7 @@ Welcome to the RAT24S Compiler Web App! This web application allows you to input
 ## Features
 
 - **Lexical Analysis:** Input your RAT24S code and get the identifier and token information.
-- **Syntax Analysis (Coming Soon):** Additional features will be added to support syntax analysis.
+- **Syntax Analysis: Input your RAT24S code and get the instructions used for your program
 
 ## Getting Started
 
