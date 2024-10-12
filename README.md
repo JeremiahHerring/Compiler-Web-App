@@ -4,10 +4,6 @@
 
 Welcome to the RAT24S Compiler Web App! This web application allows you to input RAT24S code into the lexical analyzer, which then outputs the corresponding identifier and token for the input. Stay tuned for the syntax analyzer, coming soon!
 
-## Using the Application
-
-Go to the following website: https://jerempy.pythonanywhere.com/
-
 ## Features
 
 - **Lexical Analysis:** Input your RAT24S code and get the identifier and token information.
